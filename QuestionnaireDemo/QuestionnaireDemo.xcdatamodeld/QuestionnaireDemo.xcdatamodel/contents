@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Catelog" representedClassName="Catelog" syncable="YES">
+        <attribute name="iID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iSort" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questionnaire" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="catelogs" inverseEntity="Questionnaire" syncable="YES"/>
+    </entity>
+    <entity name="Info" representedClassName="Info" syncable="YES">
+        <attribute name="iID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iTypeID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sCompanyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sTypeName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="questionnaire" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="info" inverseEntity="Questionnaire" syncable="YES"/>
+    </entity>
+    <entity name="Logic" representedClassName="Logic" syncable="YES">
+        <attribute name="iID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iLogicType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iQuestionID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iSelectAnswers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iSkipFrom" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iSkipTo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="logics" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Option" representedClassName="Option" syncable="YES">
+        <attribute name="bISOther" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iSort" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="options" inverseEntity="Question" syncable="YES"/>
+        <relationship name="scorings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scoring" inverseName="option" inverseEntity="Scoring" syncable="YES"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="bISMust" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iAnswerNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iCatalogID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iCatalogSort" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iQuestionID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iScore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iSort" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iTemplateID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="qNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sCategoryText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sQuestionTilte" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sShowID" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="logics" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Logic" inverseName="question" inverseEntity="Logic" syncable="YES"/>
+        <relationship name="options" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Option" inverseName="question" inverseEntity="Option" syncable="YES"/>
+        <relationship name="questionnaire" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questionnaire" inverseName="questions" inverseEntity="Questionnaire" syncable="YES"/>
+        <relationship name="recommendAnswers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecommendAnswers" inverseName="question" inverseEntity="RecommendAnswers" syncable="YES"/>
+    </entity>
+    <entity name="Questionnaire" representedClassName="Questionnaire" syncable="YES">
+        <relationship name="catelogs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Catelog" inverseName="questionnaire" inverseEntity="Catelog" syncable="YES"/>
+        <relationship name="info" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Info" inverseName="questionnaire" inverseEntity="Info" syncable="YES"/>
+        <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question" inverseName="questionnaire" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="RecommendAnswers" representedClassName="RecommendAnswers" syncable="YES">
+        <attribute name="iID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="recommendAnswers" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Scoring" representedClassName="Scoring" syncable="YES">
+        <attribute name="iID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iSort" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sScoringOptionTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="option" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Option" inverseName="scorings" inverseEntity="Option" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Catelog" positionX="-117" positionY="-18" width="128" height="120"/>
+        <element name="Info" positionX="16" positionY="-153" width="128" height="135"/>
+        <element name="Logic" positionX="-18" positionY="63" width="128" height="150"/>
+        <element name="Option" positionX="124" positionY="108" width="128" height="120"/>
+        <element name="Question" positionX="259" positionY="144" width="128" height="330"/>
+        <element name="Questionnaire" positionX="196" positionY="-9" width="128" height="90"/>
+        <element name="RecommendAnswers" positionX="-126" positionY="279" width="128" height="90"/>
+        <element name="Scoring" positionX="-162" positionY="162" width="128" height="105"/>
+    </elements>
+</model>

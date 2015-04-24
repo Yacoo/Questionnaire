@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32F103A51AE9D1DC0050FAA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F103A41AE9D1DC0050FAA5 /* main.m */; };
+		32F103A81AE9D1DC0050FAA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F103A71AE9D1DC0050FAA5 /* AppDelegate.m */; };
+		32F103AB1AE9D1DC0050FAA5 /* QuestionnaireDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32F103A91AE9D1DC0050FAA5 /* QuestionnaireDemo.xcdatamodeld */; };
+		32F103AE1AE9D1DC0050FAA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F103AD1AE9D1DC0050FAA5 /* ViewController.m */; };
+		32F103B11AE9D1DC0050FAA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F103AF1AE9D1DC0050FAA5 /* Main.storyboard */; };
+		32F103B31AE9D1DC0050FAA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F103B21AE9D1DC0050FAA5 /* Images.xcassets */; };
+		32F103B61AE9D1DC0050FAA5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F103B41AE9D1DC0050FAA5 /* LaunchScreen.xib */; };
+		32F103C21AE9D1DC0050FAA5 /* QuestionnaireDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F103C11AE9D1DC0050FAA5 /* QuestionnaireDemoTests.m */; };
+		32F103FB1AEA11E10050FAA5 /* Questionnaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F103FA1AEA11E10050FAA5 /* Questionnaire.m */; };
+		32F103FE1AEA11E20050FAA5 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F103FD1AEA11E20050FAA5 /* Question.m */; };
+		32F104011AEA11E20050FAA5 /* Logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F104001AEA11E20050FAA5 /* Logic.m */; };
+		32F104041AEA11E20050FAA5 /* Scoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F104031AEA11E20050FAA5 /* Scoring.m */; };
+		32F104071AEA11E20050FAA5 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F104061AEA11E20050FAA5 /* Info.m */; };
+		32F1040A1AEA11E20050FAA5 /* RecommendAnswers.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F104091AEA11E20050FAA5 /* RecommendAnswers.m */; };
+		32F1040D1AEA11E20050FAA5 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F1040C1AEA11E20050FAA5 /* Option.m */; };
+		32F104101AEA11E20050FAA5 /* Catelog.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F1040F1AEA11E20050FAA5 /* Catelog.m */; };
+		32F104131AEA213A0050FAA5 /* MainInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F104121AEA213A0050FAA5 /* MainInfo.m */; };
+		C79A2DC449959CFEC38A0796 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E38BF17987C48643C62D75DC /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32F103BC1AE9D1DC0050FAA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32F103971AE9D1DC0050FAA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F1039E1AE9D1DC0050FAA5;
+			remoteInfo = QuestionnaireDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32F1039F1AE9D1DC0050FAA5 /* QuestionnaireDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionnaireDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F103A31AE9D1DC0050FAA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F103A41AE9D1DC0050FAA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32F103A61AE9D1DC0050FAA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32F103A71AE9D1DC0050FAA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32F103AA1AE9D1DC0050FAA5 /* QuestionnaireDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuestionnaireDemo.xcdatamodel; sourceTree = "<group>"; };
+		32F103AC1AE9D1DC0050FAA5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32F103AD1AE9D1DC0050FAA5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32F103B01AE9D1DC0050FAA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32F103B21AE9D1DC0050FAA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32F103B51AE9D1DC0050FAA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32F103BB1AE9D1DC0050FAA5 /* QuestionnaireDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestionnaireDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32F103C01AE9D1DC0050FAA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F103C11AE9D1DC0050FAA5 /* QuestionnaireDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionnaireDemoTests.m; sourceTree = "<group>"; };
+		32F103F91AEA11E10050FAA5 /* Questionnaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questionnaire.h; sourceTree = "<group>"; };
+		32F103FA1AEA11E10050FAA5 /* Questionnaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questionnaire.m; sourceTree = "<group>"; };
+		32F103FC1AEA11E20050FAA5 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		32F103FD1AEA11E20050FAA5 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		32F103FF1AEA11E20050FAA5 /* Logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logic.h; sourceTree = "<group>"; };
+		32F104001AEA11E20050FAA5 /* Logic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logic.m; sourceTree = "<group>"; };
+		32F104021AEA11E20050FAA5 /* Scoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scoring.h; sourceTree = "<group>"; };
+		32F104031AEA11E20050FAA5 /* Scoring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scoring.m; sourceTree = "<group>"; };
+		32F104051AEA11E20050FAA5 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		32F104061AEA11E20050FAA5 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		32F104081AEA11E20050FAA5 /* RecommendAnswers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendAnswers.h; sourceTree = "<group>"; };
+		32F104091AEA11E20050FAA5 /* RecommendAnswers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendAnswers.m; sourceTree = "<group>"; };
+		32F1040B1AEA11E20050FAA5 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		32F1040C1AEA11E20050FAA5 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		32F1040E1AEA11E20050FAA5 /* Catelog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Catelog.h; sourceTree = "<group>"; };
+		32F1040F1AEA11E20050FAA5 /* Catelog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Catelog.m; sourceTree = "<group>"; };
+		32F104111AEA213A0050FAA5 /* MainInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainInfo.h; sourceTree = "<group>"; };
+		32F104121AEA213A0050FAA5 /* MainInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainInfo.m; sourceTree = "<group>"; };
+		5FB7E764A6C9F388A25745E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7F56E27DFE44275AD3A3B71C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E38BF17987C48643C62D75DC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32F1039C1AE9D1DC0050FAA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C79A2DC449959CFEC38A0796 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F103B81AE9D1DC0050FAA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F103961AE9D1DC0050FAA5 = {
+			isa = PBXGroup;
+			children = (
+				32F103A11AE9D1DC0050FAA5 /* QuestionnaireDemo */,
+				32F103BE1AE9D1DC0050FAA5 /* QuestionnaireDemoTests */,
+				32F103A01AE9D1DC0050FAA5 /* Products */,
+				FF34C506AA1551B9D49F9521 /* Pods */,
+				5BBFB67E0E68705C062E6A6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32F103A01AE9D1DC0050FAA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32F1039F1AE9D1DC0050FAA5 /* QuestionnaireDemo.app */,
+				32F103BB1AE9D1DC0050FAA5 /* QuestionnaireDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32F103A11AE9D1DC0050FAA5 /* QuestionnaireDemo */ = {
+			isa = PBXGroup;
+			children = (
+				32F103CB1AEA0A540050FAA5 /* DataModel */,
+				32F103A61AE9D1DC0050FAA5 /* AppDelegate.h */,
+				32F103A71AE9D1DC0050FAA5 /* AppDelegate.m */,
+				32F103AC1AE9D1DC0050FAA5 /* ViewController.h */,
+				32F103AD1AE9D1DC0050FAA5 /* ViewController.m */,
+				32F103AF1AE9D1DC0050FAA5 /* Main.storyboard */,
+				32F103B21AE9D1DC0050FAA5 /* Images.xcassets */,
+				32F103B41AE9D1DC0050FAA5 /* LaunchScreen.xib */,
+				32F103A91AE9D1DC0050FAA5 /* QuestionnaireDemo.xcdatamodeld */,
+				32F103A21AE9D1DC0050FAA5 /* Supporting Files */,
+			);
+			path = QuestionnaireDemo;
+			sourceTree = "<group>";
+		};
+		32F103A21AE9D1DC0050FAA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F103A31AE9D1DC0050FAA5 /* Info.plist */,
+				32F103A41AE9D1DC0050FAA5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F103BE1AE9D1DC0050FAA5 /* QuestionnaireDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				32F103C11AE9D1DC0050FAA5 /* QuestionnaireDemoTests.m */,
+				32F103BF1AE9D1DC0050FAA5 /* Supporting Files */,
+			);
+			path = QuestionnaireDemoTests;
+			sourceTree = "<group>";
+		};
+		32F103BF1AE9D1DC0050FAA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32F103C01AE9D1DC0050FAA5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32F103CB1AEA0A540050FAA5 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				32F1040E1AEA11E20050FAA5 /* Catelog.h */,
+				32F1040F1AEA11E20050FAA5 /* Catelog.m */,
+				32F1040B1AEA11E20050FAA5 /* Option.h */,
+				32F1040C1AEA11E20050FAA5 /* Option.m */,
+				32F104081AEA11E20050FAA5 /* RecommendAnswers.h */,
+				32F104091AEA11E20050FAA5 /* RecommendAnswers.m */,
+				32F104051AEA11E20050FAA5 /* Info.h */,
+				32F104061AEA11E20050FAA5 /* Info.m */,
+				32F104021AEA11E20050FAA5 /* Scoring.h */,
+				32F104031AEA11E20050FAA5 /* Scoring.m */,
+				32F103FF1AEA11E20050FAA5 /* Logic.h */,
+				32F104001AEA11E20050FAA5 /* Logic.m */,
+				32F103FC1AEA11E20050FAA5 /* Question.h */,
+				32F103FD1AEA11E20050FAA5 /* Question.m */,
+				32F103F91AEA11E10050FAA5 /* Questionnaire.h */,
+				32F103FA1AEA11E10050FAA5 /* Questionnaire.m */,
+				32F104111AEA213A0050FAA5 /* MainInfo.h */,
+				32F104121AEA213A0050FAA5 /* MainInfo.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		5BBFB67E0E68705C062E6A6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E38BF17987C48643C62D75DC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF34C506AA1551B9D49F9521 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F56E27DFE44275AD3A3B71C /* Pods.debug.xcconfig */,
+				5FB7E764A6C9F388A25745E2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32F1039E1AE9D1DC0050FAA5 /* QuestionnaireDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F103C51AE9D1DC0050FAA5 /* Build configuration list for PBXNativeTarget "QuestionnaireDemo" */;
+			buildPhases = (
+				B645BD6D20FD74AE39D7A180 /* Check Pods Manifest.lock */,
+				32F1039B1AE9D1DC0050FAA5 /* Sources */,
+				32F1039C1AE9D1DC0050FAA5 /* Frameworks */,
+				32F1039D1AE9D1DC0050FAA5 /* Resources */,
+				6C396DA9D853DA60A1266C9D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuestionnaireDemo;
+			productName = QuestionnaireDemo;
+			productReference = 32F1039F1AE9D1DC0050FAA5 /* QuestionnaireDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32F103BA1AE9D1DC0050FAA5 /* QuestionnaireDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32F103C81AE9D1DC0050FAA5 /* Build configuration list for PBXNativeTarget "QuestionnaireDemoTests" */;
+			buildPhases = (
+				32F103B71AE9D1DC0050FAA5 /* Sources */,
+				32F103B81AE9D1DC0050FAA5 /* Frameworks */,
+				32F103B91AE9D1DC0050FAA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32F103BD1AE9D1DC0050FAA5 /* PBXTargetDependency */,
+			);
+			name = QuestionnaireDemoTests;
+			productName = QuestionnaireDemoTests;
+			productReference = 32F103BB1AE9D1DC0050FAA5 /* QuestionnaireDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32F103971AE9D1DC0050FAA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = yake;
+				TargetAttributes = {
+					32F1039E1AE9D1DC0050FAA5 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					32F103BA1AE9D1DC0050FAA5 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 32F1039E1AE9D1DC0050FAA5;
+					};
+				};
+			};
+			buildConfigurationList = 32F1039A1AE9D1DC0050FAA5 /* Build configuration list for PBXProject "QuestionnaireDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32F103961AE9D1DC0050FAA5;
+			productRefGroup = 32F103A01AE9D1DC0050FAA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32F1039E1AE9D1DC0050FAA5 /* QuestionnaireDemo */,
+				32F103BA1AE9D1DC0050FAA5 /* QuestionnaireDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32F1039D1AE9D1DC0050FAA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F103B11AE9D1DC0050FAA5 /* Main.storyboard in Resources */,
+				32F103B61AE9D1DC0050FAA5 /* LaunchScreen.xib in Resources */,
+				32F103B31AE9D1DC0050FAA5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F103B91AE9D1DC0050FAA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C396DA9D853DA60A1266C9D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B645BD6D20FD74AE39D7A180 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F1039B1AE9D1DC0050FAA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F103AB1AE9D1DC0050FAA5 /* QuestionnaireDemo.xcdatamodeld in Sources */,
+				32F104041AEA11E20050FAA5 /* Scoring.m in Sources */,
+				32F1040D1AEA11E20050FAA5 /* Option.m in Sources */,
+				32F103A81AE9D1DC0050FAA5 /* AppDelegate.m in Sources */,
+				32F104131AEA213A0050FAA5 /* MainInfo.m in Sources */,
+				32F103AE1AE9D1DC0050FAA5 /* ViewController.m in Sources */,
+				32F103FE1AEA11E20050FAA5 /* Question.m in Sources */,
+				32F104071AEA11E20050FAA5 /* Info.m in Sources */,
+				32F104011AEA11E20050FAA5 /* Logic.m in Sources */,
+				32F103A51AE9D1DC0050FAA5 /* main.m in Sources */,
+				32F1040A1AEA11E20050FAA5 /* RecommendAnswers.m in Sources */,
+				32F103FB1AEA11E10050FAA5 /* Questionnaire.m in Sources */,
+				32F104101AEA11E20050FAA5 /* Catelog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32F103B71AE9D1DC0050FAA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F103C21AE9D1DC0050FAA5 /* QuestionnaireDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32F103BD1AE9D1DC0050FAA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32F1039E1AE9D1DC0050FAA5 /* QuestionnaireDemo */;
+			targetProxy = 32F103BC1AE9D1DC0050FAA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32F103AF1AE9D1DC0050FAA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F103B01AE9D1DC0050FAA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32F103B41AE9D1DC0050FAA5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32F103B51AE9D1DC0050FAA5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32F103C31AE9D1DC0050FAA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32F103C41AE9D1DC0050FAA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32F103C61AE9D1DC0050FAA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F56E27DFE44275AD3A3B71C /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QuestionnaireDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32F103C71AE9D1DC0050FAA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB7E764A6C9F388A25745E2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QuestionnaireDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32F103C91AE9D1DC0050FAA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuestionnaireDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuestionnaireDemo.app/QuestionnaireDemo";
+			};
+			name = Debug;
+		};
+		32F103CA1AE9D1DC0050FAA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QuestionnaireDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuestionnaireDemo.app/QuestionnaireDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32F1039A1AE9D1DC0050FAA5 /* Build configuration list for PBXProject "QuestionnaireDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F103C31AE9D1DC0050FAA5 /* Debug */,
+				32F103C41AE9D1DC0050FAA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F103C51AE9D1DC0050FAA5 /* Build configuration list for PBXNativeTarget "QuestionnaireDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F103C61AE9D1DC0050FAA5 /* Debug */,
+				32F103C71AE9D1DC0050FAA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32F103C81AE9D1DC0050FAA5 /* Build configuration list for PBXNativeTarget "QuestionnaireDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32F103C91AE9D1DC0050FAA5 /* Debug */,
+				32F103CA1AE9D1DC0050FAA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		32F103A91AE9D1DC0050FAA5 /* QuestionnaireDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				32F103AA1AE9D1DC0050FAA5 /* QuestionnaireDemo.xcdatamodel */,
+			);
+			currentVersion = 32F103AA1AE9D1DC0050FAA5 /* QuestionnaireDemo.xcdatamodel */;
+			path = QuestionnaireDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 32F103971AE9D1DC0050FAA5 /* Project object */;
+}
